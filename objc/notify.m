@@ -68,9 +68,9 @@ bool sendNotification(NSString *title, NSString *subtitle, NSString *message, NS
                 }
                 [nc deliverNotification:note];
 
-                while (ncDelegate.keepRunning) {
-                        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
-                }
+                //while (ncDelegate.keepRunning) {
+                //        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
+                //}
                 return YES;
         }
 }
